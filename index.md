@@ -66,7 +66,6 @@ header{
 
 <header>
   <h1>peridotan Leather Craft</h1>
-  <p>images フォルダの画像を自動表示</p>
 </header>
 
 <div class="gallery">
