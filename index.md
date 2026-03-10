@@ -64,10 +64,6 @@ header{
 
 <body>
 
-<header>
-  <h1>peridotan Leather Craft</h1>
-</header>
-
 <div class="gallery">
 {% assign files = site.static_files | sort: "name" | reverse %}
 {% for file in files %}
