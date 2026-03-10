@@ -1,0 +1,60 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>peridotan Leather Craft</title>
+
+<style>
+body{
+  font-family:sans-serif;
+  margin:0;
+  background:#f5f5f5;
+}
+
+header{
+  text-align:center;
+  padding:30px;
+  background:#222;
+  color:white;
+}
+
+.gallery{
+  max-width:1000px;
+  margin:30px auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:15px;
+  padding:0 15px;
+}
+
+.gallery img{
+  width:100%;
+  border-radius:8px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>peridotan Leather Craft</h1>
+<p>images フォルダの画像を自動表示</p>
+</header>
+
+<div class="gallery">
+
+{% for file in site.static_files %}
+{% if file.path contains '/images/' %}
+
+<img src="{{ file.path | relative_url }}">
+
+{% endif %}
+{% endfor %}
+
+</div>
+
+</body>
+</html>
