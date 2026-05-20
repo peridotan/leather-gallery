@@ -38,7 +38,7 @@ header{
 .card img{
   width:100%;
   aspect-ratio:4 / 5;
-  object-fit:cover;
+  object-fit:contain;
   display:block;
   background:#ddd;
 }
